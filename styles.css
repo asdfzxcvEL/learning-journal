@@ -50,10 +50,14 @@ li a {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 4em 0 1em 0;
+    position: relative;
+    height: 200px;
 }
 
 .hero-container {
-    display: flex;
+    position: absolute;
+    bottom: 1em;
+    left: 5%;
 }
 
 .hero-date {
@@ -68,6 +72,7 @@ li a {
 
 .hero-body {
     margin: 0;
+    max-width: 768px;
 }
 
 @media (min-width: 480px)  {
@@ -89,6 +94,22 @@ li a {
     }    
 
     .hero {
-        height: 250px;
+        height: 300px;
+    }
+
+    .hero-container {
+        bottom: 4em;
+    }
+}
+
+@media (min-width: 1100px) {
+    .hero {
+        background-position-y: -160px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .hero {
+        background-position-y: -260px;
     }
 }
