@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 1.25em 0;
+}
+
+.icon {
+    width: 23px;
+    display: block;
+    padding-right: 0.25em;
+}
+
+.logo {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    padding-left: 2em;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.blog-image {
+    width: 100%;
+    padding-top: 2em;
+}
+
+.hero {
+    color: white;
+    background: url("images/blog-image-hero.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 4em 0 1em 0;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-date {
+    font-size: 0.75rem;
+}
+
+.hero-title {
+    font-size: 2rem;
+    width: 70%;
+    margin: 0;
+}
+
+.hero-body {
+    margin: 0;
+}
+
+@media (min-width: 480px)  {
+    .blog-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1em;  
+    }
+    .blog-list .blog {
+        flex: 1 220px;
+    }    
+}
+
+
+@media (min-width: 768px) {
+    .blog-list .blog {
+        flex-basis: 250px;  
+    }    
+
+    .hero {
+        height: 250px;
+    }
+}
